@@ -23,4 +23,14 @@ export default [
       },
     },
   },
+  {
+    name: 'strapi::cors',
+    config: {
+      enabled: true,
+      origin: ['https://next-store-mauve-two.vercel.app/'], 
+      methods: ['GET', 'POST', 'PUT', 'DELETE'],
+      allowedHeaders: ['Content-Type', 'Authorization'],
+      credentials: true,
+    },
+  },
 ];
